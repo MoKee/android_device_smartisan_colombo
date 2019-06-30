@@ -27,10 +27,5 @@ $(call inherit-product, vendor/smartisan/colombo/colombo-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-# NFC
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
-
 # Inherit from msm8996-common
 $(call inherit-product, device/smartisan/msm8996-common/common.mk)
